@@ -1,6 +1,8 @@
+// Anya Kothari
+// 4/03/24
 /**
  * Creates a Maze made up of MazeCells
- * @author Ms. Namasivayam
+ * @author Ms. Namasivayam and Anya Kothari
  * @version 03/04/2022
  */
 
@@ -107,6 +109,7 @@ public class Maze {
             }
             System.out.println();
         }
+        System.out.println();
     }
 
     /**
@@ -145,11 +148,14 @@ public class Maze {
      * @param col the int col val
      * @return boolean true/false
      */
+    // Method to check if a cell is valid
     public boolean isValidCell(int row, int col) {
         // TODO: Complete this function
-        if (row < 0 || col < 0 || mazeGrid[row][col].isWall() || mazeGrid[row][col].isExplored()) {
+        // Returns false if the cell is out of bounds, is a wall, or has already been explored
+        if (row >= this.numRows || col >= this.numCols || row < 0 || col < 0 || mazeGrid[row][col].isWall() || mazeGrid[row][col].isExplored()) {
             return false;
         }
+        // Otherwise return true
         return true;
     }
 }

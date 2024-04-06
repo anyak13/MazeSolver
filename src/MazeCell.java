@@ -1,6 +1,8 @@
+// Anya Kothari
+// 4/03/24
 /**
  * A class that represents a single cell of the maze.
- * @author Ms. Namasivayam
+ * @author Ms. Namasivayam and Anya Kothari
  * @version 03/10/2023
  */
 
